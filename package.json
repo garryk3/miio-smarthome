@@ -1,0 +1,16 @@
+{
+  "name": "miio-smarthome",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:garryk3/miio-smarthome.git",
+  "author": "garryk3 <egoruum@yandex.ru>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --experimental-modules src/index.js"
+  },
+  "dependencies": {
+    "miio": "^0.15.6",
+    "nodemon": "^1.19.2"
+  }
+}

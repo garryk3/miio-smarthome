@@ -1,0 +1,11 @@
+{
+    "devices": {
+        "yeelight": {
+            "lamp_kitchen": ""
+        },
+        "gateway": {
+            "url": "",
+            "token": ""
+        }
+    }
+}

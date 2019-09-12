@@ -1,0 +1,17 @@
+{
+    "sensors": {
+        "motion": {
+        },
+        "water": {
+        },
+        "fire": {
+        }
+    },
+    "plugs": {
+    },
+    "switchers": {
+    },
+    "buttons": {
+        "test_device": { "model": "sensor_switch.v2", "did": "779vvhvhgvhvhgvhgvhv", "name": "Кнопка" }
+    }
+}
