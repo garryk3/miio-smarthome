@@ -10,13 +10,17 @@ export default class MiioController {
     }
 
     async init() {
-        const { devices: { gateway } } = config;
+        try {
+            const { devices: { gateway } } = config;
 
-        this.gateway = await miio.device({
-            address: gateway.url,
-            token: gateway.token
-        });
-        this.gatewayDevices = this.gateway.children();
+            this.gateway = await miio.device({
+                address: gateway.url,
+                token: gateway.token
+            });
+            this.gatewayDevices = this.gateway.children();
+        } catch(error) {
+            console.error(`[MiioController] init error: ${error}`)
+        }
     }
 
     sortDevicesByType() {
