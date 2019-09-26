@@ -13,7 +13,6 @@ export default class MotionSensors extends Device {
                 const deviceName = devices[name].info.name;
 
                 this._subscribeOnMotionChanges(device, deviceName, name);
-                this._subscribeOnStateChanges(device, deviceName, name);
             }
         } catch (error) {
             console.error(`[MotionSensor] subscribe error ${error}`)

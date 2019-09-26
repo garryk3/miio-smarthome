@@ -1,6 +1,6 @@
 import Device from '../device.js';
 
-export default class WaterSensors extends Device {
+export default class WallSwitches extends Device {
     constructor(devices) {
         super();
         this._deviceSubscribes(devices);
@@ -13,16 +13,17 @@ export default class WaterSensors extends Device {
                 const deviceName = devices[name].info.name;
 
                 this._subscribeOnStateChanges(device, deviceName, name);
-                this._subscribeOnWaterDetectedChanges(device, deviceName, name);
+                this._subscribeOnPowerChanges(device, deviceName, name);
+                this._subscribeOnAction(device, deviceName, name);
             }
         } catch (error) {
-            console.error(`[WaterSensor] subscribe error ${error}`)
+            console.error(`[WallSwitches] subscribe error ${error}`)
         }
     }
 
-    _subscribeOnWaterDetectedChanges(device, deviceName, name) {
-        device.on('waterDetectedChanged', (action) => {
-            console.log('!!!!!!water waterDetectedChanged', action, deviceName)
+    _subscribeOnPowerChanges(device, deviceName, name) {
+        device.on('power', (action) => {
+            console.log('!!!!!!wall-switch', action, deviceName)
         })
     }
 }

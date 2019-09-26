@@ -4,4 +4,10 @@ export default class Device {
             console.log('@@', action, deviceName)
         })
     }
+
+    _subscribeOnAction(device, deviceName, name) {
+        device.on('action', (action, device) => {
+            console.log('@@device action', action, deviceName)
+        })
+    }
 }
