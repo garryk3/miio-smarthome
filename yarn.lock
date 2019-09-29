@@ -469,9 +469,9 @@ dwaal@^0.1.4:
     unix-socket-leader "^0.1.2"
 
 end-of-stream@^1.1.0, end-of-stream@^1.4.0:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/end-of-stream/-/end-of-stream-1.4.1.tgz#ed29634d19baba463b6ce6b80a37213eab71ec43"
-  integrity sha512-1MkrZNvWTKCaigbn+W15elq2BB/L22nqrSY5DKlo3X6+vclJm8Bb5djXJBmEX6fS3+zCh/F4VBK5Z2KxJt4s2Q==
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/end-of-stream/-/end-of-stream-1.4.4.tgz#5ae64a5f45057baf3626ec14da0ca5e4b2431eb0"
+  integrity sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==
   dependencies:
     once "^1.4.0"
 
@@ -1127,10 +1127,9 @@ micromatch@^3.1.10, micromatch@^3.1.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.2"
 
-miio@^0.15.6:
-  version "0.15.6"
-  resolved "https://registry.yarnpkg.com/miio/-/miio-0.15.6.tgz#0da26f7b25e16e35734fd8778ff3a280465e1a6c"
-  integrity sha512-Xxj5nefwZN1FRooUxLW0uFv42lP3RTY/91W3RtdMvlIChpcbqvdxpd4O5p3UidSqOuoMcWbqmchOiNFfLXUHGQ==
+"miio@git+ssh:git@github.com:garryk3/miio.git":
+  version "0.15.4"
+  resolved "git+ssh:git@github.com:garryk3/miio.git#dbd66fd9c6ebe7a206eb202624c268a1d77424d0"
   dependencies:
     abstract-things "^0.9.0"
     appdirectory "^0.1.0"

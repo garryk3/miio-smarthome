@@ -10,7 +10,7 @@
     "start": "nodemon --experimental-modules src/index.js"
   },
   "dependencies": {
-    "miio": "^0.15.6",
-    "nodemon": "^1.19.2"
+    "nodemon": "^1.19.2",
+    "miio": "git+ssh:git@github.com:garryk3/miio.git"
   }
 }
